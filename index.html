@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Đoàn Trợ - Vào đoàn thật dễ</title>
+		<style>
+			.cak{
+				width: 1000px;
+			}
+			.nocolor{
+				color:white;
+			}
+			pre {
+			    white-space: pre-wrap;       /* Since CSS 2.1 */
+			    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+			    white-space: -pre-wrap;      /* Opera 4-6 */
+			    white-space: -o-pre-wrap;    /* Opera 7 */
+			    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+			}
+			body { 
+			  font-size : 18px;
+			  display: grid;
+			  background-image: url('http://i.imgur.com/xSPhOqk.png');
+			  grid-template-areas: 
+			    "header"
+			    "article"
+			    "footer";
+			  grid-template-rows: 200px 1fr 250px;  
+			  grid-template-columns: 100%;
+			  grid-row-gap: 10px;
+			  grid-column-gap: 10px;
+			  height: 100vh;
+			  margin: 0;
+			  }  
+			header, footer, article, div {
+			  padding: 3px;
+			  
+			  border-width: 1px;
+			  border-color: black;
+			  border-style: solid;
+			  }
+			#pageHeader {
+			  grid-area: header;
+			  }
+			#pageFooter {
+			  grid-area: footer;
+			  }
+			#mainArticle { 
+			  grid-area: article;      
+			  }
+			#mainNav { 
+			  grid-area: nav; 
+			  }
+			#siteAds { 
+			  grid-area: ads; 
+			  } 
+			/* Stack the layout on small devices/viewports. */
+			@media all and (max-width: 575px) {
+			  body { 
+			    grid-template-areas: 
+			      "header"
+			      "article"
+			      "ads"
+			      "nav"
+			      "footer";
+			    grid-template-rows: 200px 1fr 70px 1fr 70px;  
+			    grid-template-columns: 100%;
+			 }
+			}
+		</style>
+	</head>
+
+	<body>
+	  	<header id="pageHeader">
+	  		<img style = "height: 190px" src="http://i.imgur.com/zHbKwh4.png">
+	  		<img style = "height: 100px ; padding-left: 85px ; padding-bottom: 45px" src="http://i.imgur.com/WkrokMV.png">
+	  		<img style = "height: 190px ; padding-left: 75px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ539vGUJDRRbhZQKKZpyDOtnDm68mLmwQoXgSWpvd1P-8PMX-Qaw">
+	  	</header>
+	  	<article id="mainArticle">
+	  		<form action="/" method="post">
+	  			<p> Nhập tên: </p> <input type="text" name="name" class="cak" placeholder="Nguyễn Minh Tùng" >
+	  			<p> Nhập lớp: </p> <input type="text" name="class" class="cak" placeholder="10A1 Toán" >
+	  			<p> Nhập tên chi đoàn: </p> <input type="text" name="school" class="cak" placeholder="THPT chuyên KHTN">
+				<p> Chọn câu hỏi: </p>
+	  			<select name="q" class="cak">
+					<option value="0">Ý nghĩa của các lần đổi tên qua từng thời kì?</option>
+					<option value="1">Các hoạt động của Đoàn và ý nghĩa?</option>
+					<option value="2">Trách nhiệm thực hiện tốt các nhiệm vụ của Đoàn</option>
+					<option value="3">Kiến nghị và giải pháp về việc xây dựng đoàn</option>
+					<option value="4">Mục đích, lí tưởng của Đoàn?</option>
+					<option value="5">Chức năng của Đoàn?</option>
+					<option value="6">Vị trí của Đoàn?</option>
+					<option value="7">Tính chất của Đoàn?</option>
+					<option value="8">Vai trò của Đoàn?</option>
+					<option value="9">Quyền của Đoàn viên?</option>
+					<option value="10">Nhiệm vụ của Đoàn viên?</option>
+					<option value="11">Nguyên tắc của Đoàn thanh niên Cộng sản Hồ Chí Minh?</option>
+					<option value="12">Cảm nghĩ về lý tưởng của Đoàn thanh niên Cộng sản Hồ Chí Minh?</option>
+					<option value="13">Cảm nghĩ về Đoàn thanh niên Cộng sản Hồ Chí Minh?</option>
+	  			</select>
+				<p></p>
+	  			<input type="submit">
+	  		</form>
+			<p></p>
+	  		<article><pre>[result_tag]</pre></article>
+	  	</article>
+	  	<footer id="pageFooter">
+	  		<pre style="color:#AAA">
+	By:
+		Nguyễn Minh Tùng <a style="color:#A00">&lt;minhtung0404@gmail.com&gt;</a>				Lê Quang Huy <a style="color:#A00">&lt;atoiz2003@gmail.com&gt;</a>
+		Bùi Hồng Đức <a style="color:#A00">&lt;&gt;</a>											Nguyễn Thành Minh <a style="color:#A00">&lt;tmdeptrai@gmail.com&gt;</a>
+		Hoàng Bảo Phúc <a style="color:#A00">&lt;phucdtd@gmail.com&gt;</a>						Trần Xuân Bách <a style="color:#A00">&lt;&gt;</a></pre>
+			<p style="font-size:35px; text-align:center; color:#DDD"> <b><i>Hope you had a great time! </i></b> </p> 
+	  	</footer>
+	</body>
+</html>

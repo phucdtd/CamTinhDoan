@@ -1,0 +1,14 @@
+
+32
+down vote
+accepted
+Use this in your server.js file
+
+app.use(express.static(__dirname + '/public'));
+and add css like
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+dont need / before css like
+
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+shareeditflag
