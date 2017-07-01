@@ -21,8 +21,8 @@ app.post("/", (req, res) => {
     result += "Tên lớp: " + req.body.class + "\n";
     result += "Tên: " + req.body.name + "\n";
     result += '<p style="text-align:center; font-size:36px"><b>Bài thu hoạch cảm tình Đoàn</b></p>';
-    let arr = (fs.readFileSync("https://github.com/phucdtd/CamTinhDoan/tree/master/Hackathon/list.txt", "utf-8")).split(/\r?\n/);
-    let path = "https://github.com/phucdtd/CamTinhDoan/tree/master/Hackathon/" + strip(arr[req.body.q]) + "/";
+    let arr = (fs.readFileSync("hackathon/list.txt", "utf-8")).split(/\r?\n/);
+    let path = "hackathon/" + strip(arr[req.body.q]) + "/";
     let qname = (fs.readFileSync(path + "name.txt"));
     result += '<p style="font-size :24px">'; 
     result += qname;
