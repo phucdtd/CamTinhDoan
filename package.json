@@ -4,8 +4,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-    "start": "node your-script.js"
-},
+ 	   "start": "node your-script.js"
+	},
 	"author": "user202729",
 	"license": "ISC",
 	"dependencies": {
@@ -15,4 +15,7 @@
 		"shuffle-array": "latest",
 		"express": "latest"
 	}
+	"engines": {
+    		"node": "4.1.1"
+  	},
 }
