@@ -4,7 +4,8 @@ const bodyParser = require("body-parser");
 const app = express();
 const strip = require("strip-comments");
 const shuffle = require("shuffle-array");
-
+app.set('port', (process.env.PORT || 5000));
+app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -42,6 +43,6 @@ app.post("/", (req, res) => {
     res.redirect("/");
 });
 
-app.listen(80, () => {
-    //console.log("Listening!");
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
 });
