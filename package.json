@@ -9,7 +9,7 @@
 	"author": "user202729",
 	"license": "ISC",
 	"dependencies": {
-		"fs": "latest",
+		"axios": "latest",
 		"body-parser": "latest",
 		"strip-comments": "latest",
 		"shuffle-array": "latest",
